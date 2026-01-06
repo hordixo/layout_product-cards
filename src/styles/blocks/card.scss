@@ -7,20 +7,19 @@
   width: 200px;
   border: 1px solid vars.$color-border;
   flex-direction: column;
-  margin: 0;
-
+  padding: 32px 16px 16px;
   background-color: vars.$color-background;
 
   &__img {
     width: 160px;
     height: 134px;
     margin-bottom: vars.$padding-bottom-img;
-    margin-top: vars.$padding-top-img;
   }
 
   &__information {
     display: inline;
-    width: 166px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   &__title {
@@ -47,11 +46,12 @@
     align-items: center;
     gap: 17px;
     margin-top: 16px;
-    width: 166px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   &__reviews {
-    width: 53px;
+    width: 100%;
     margin: 0;
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -69,7 +69,7 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 24px;
-    width: 166px;
+    width: 100%;
 
     &-text {
       margin: 0;
@@ -93,11 +93,13 @@
 
   &__button-buy {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
     width: 166px;
     height: vars.$button-height;
     margin-top: 16px;
+    border: 1px solid transparent;
     border-radius: vars.$border-radius;
     background-color: vars.$color-accent;
     font-family: Roboto, sans-serif;
