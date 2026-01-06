@@ -1,11 +1,13 @@
+@use '../variables/variables.scss' as vars;
+
 .stars {
   display: flex;
   align-items: center;
 
   &__star {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
+    height: vars.$star-size;
+    width: vars.$star-size;
+    margin-right: vars.$gap-stars;
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
     background-position: center;
